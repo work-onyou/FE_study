@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img 태그</title>
+</head>
+<body>
+    <!-- img 태그는 뒤에 닫는 태그가 없기 때문에 빈태그 -->
+    <img>
+
+    <hr>
+    구분선
+    <br>
+    
+    <!-- src 속성: 이미지 source 경로를 나타내는 속성 -->
+    <!-- 
+        상대 경로
+        1. "./는 현재 폴더 경로를 의미"
+        2. "../는 상위 폴더 경로를 의미"
+        3. "../../는 상위 폴더의 상위 폴더 경로를 의미"
+     -->
+    <img src="./img_ex8_1.jpg" alt="청계천 빛초롱축제">
+
+    <hr>
+    구분선
+    <br>
+    
+    <!-- 이미지가 해당 경로에 없는 경우 alt text 출력 -->
+    <img src="../img_ex8_1.jpg" alt="청계천 빛초롱축제">
+
+    <hr>
+    구분선
+    <br>
+
+
+    <!-- width height 속성(px값 혹은 %) -->
+    <!-- 
+        width, height 둘 중 하나만 사용 시: 둘 중 기입한 값에 따라 이미지 비율을 유지하며 사이즈 변경
+        width, height 둘 다 사용 시: 이미지 비율을 무시하고 지정된 값에 따라 사이즈 변경
+     -->
+    <img src="./img_ex8_2.jpg" alt="청계천 빛초롱축제 클로즈업" width="100">
+
+    <hr>
+    구분선
+    <br>
+
+    <!-- 외부 리소스 이미지 -->
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="구글 로고">
+
+    <hr>
+    구분선
+    <br>
+
+    <!-- img 태그 with anchor 태그 -->
+    <a href="https://www.google.com/" target="_blank">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="구글 로고">
+    </a>
+</body>
+</html>

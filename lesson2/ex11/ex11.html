@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS(Cascading Style Sheets)</title>
+
+    <!-- 내부 스타일 시트 방법 -->
+    <style>
+        body {
+            background-color: black;
+        }
+
+        p { 
+            color: pink;
+        }
+
+        .internal { 
+            color: pink;
+        }
+    </style>
+
+    <!-- 외부 스타일 시트 방법 -->
+    <link rel="stylesheet" href="./ex11.css">
+</head>
+<body>
+    <!-- 마지막에 적용된 스타일: yellow -->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, delectus alias repudiandae quod tempora quae distinctio numquam minus beatae quaerat omnis accusantium modi explicabo rem nemo, aliquam, iusto a harum?</p>
+
+    <!-- internal 스타일: pink -->
+    <p class="internal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, delectus alias repudiandae quod tempora quae distinctio numquam minus beatae quaerat omnis accusantium modi explicabo rem nemo, aliquam, iusto a harum?</p>
+
+    <!-- external 스타일: yellow -->
+    <p class="external">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, delectus alias repudiandae quod tempora quae distinctio numquam minus beatae quaerat omnis accusantium modi explicabo rem nemo, aliquam, iusto a harum?</p>
+
+    <!-- 인라인 스타일 방법 -->
+    <!-- 마지막에 적용된 스타일: yellow, 인라인 스타일: greenyellow, 적용 색상: greenyellow -->
+    <p class="inline" style="color:greenyellow;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, delectus alias repudiandae quod tempora quae distinctio numquam minus beatae quaerat omnis accusantium modi explicabo rem nemo, aliquam, iusto a harum?</p>
+</body>
+</html>
