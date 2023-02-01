@@ -1,0 +1,1 @@
+alert('external javascript 방식');
