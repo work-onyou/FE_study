@@ -8,5 +8,6 @@ Array.from(document.querySelectorAll('a')).forEach(el => {
 
 // 로고 변경
 document
-    .querySelector('#header > div.special_bg > div > div.logo_area > h1')
-    .innerHTML = '<div style="color:#03CF5B;font-size:4rem;display:flex;align-items:center;justify-content:center;width:222px;height:52px;" onclick="">👒 NEVER</div>';
+    .querySelector('#ad_topexpand > div')
+    .innerHTML = '<img src="https://images.ctfassets.net/x63mv991hgep/7mUGb8LFa6Ed7JKz2hWw0d/8feadf039c73ccb15e092fd4a5023af2/febBenefit1.jpg" alt="카이트 호텔" style = "width: 750px; height: 135px">';
+

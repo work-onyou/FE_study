@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나랑 잘 어울리는 호텔</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #E7F5E9;
+        }
+        #wrap{
+            display:flex;
+            flex-direction : column;
+            height: 100vh;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #header {
+            background-color: #C8E6C8;
+        }
+
+        #nav{
+            background-color: #A4D7A7;
+        }
+        
+        #main {
+            display:flex ;
+            flex: auto;
+        }
+        #aside{
+            background-color: #81C783;
+        
+        }
+        #section{
+            background-color: #66BC69;
+        }
+
+        .content-box{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap : 0.5rem;
+        }
+
+        button.answer{
+            border: none;
+            background-color:#DAF0F9;
+            width: 100%;
+            padding: 1rem 0 1rem 0;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            
+        }
+
+        button.answer:hover{
+            background-color:#95d6ef ;
+        }
+
+        #article{
+            background-color: #4CAF4F;
+        }
+        #footer{
+            background-color: #43A047;
+        }
+
+
+
+        @media ( width >= 768px){
+            #aside{
+                flex: 1;
+            }
+            #section{
+                flex: 4;
+            }
+            #article{
+                flex: 1;
+            }
+            
+        }
+        @media ( 480px <= width <768px){
+            #main{
+                flex-wrap: wrap;
+            }
+            #aside{
+                width: 30%;
+                
+            }
+            #section{
+                width: 70%;
+
+            }
+            #article{
+                width: 100%;
+
+            }
+
+        }
+        @media ( width < 480px){
+            #main{
+                flex-direction: column;
+            }
+            #aside{
+               flex : 2;
+                
+            }
+            #section{
+                flex : 4;
+
+            }
+            #article{
+                flex : 1;
+
+            }
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">헤더</header>
+        <nav id="nav">네브</nav>
+        <main id="main">
+            <aside id="aside">어사이드입니다</aside>
+            <section id="section">
+                <div class="content-box">
+                <button class="answer" type="button" onclick="alert('오히려 좋아');">실용성은 없어도 예쁘고 기억에 남는 선물</button>
+                <button class="answer" type="button" onclick="confirm('역시 좋아');">그래도 요즘 가장 필요할 것 같은 선물</button>
+            </div>
+            </section>
+            <article id="article">아티클입니다</article>
+        </main>
+        <footer id="footer">푸터</footer>
+    </div>
+</body>
+</html>
